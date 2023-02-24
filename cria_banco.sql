@@ -1,0 +1,13 @@
+CREATE DATABASE delivery;
+
+USE delivery;
+
+CREATE TABLE pedido (
+	id INT NOT NULL AUTO_INCREMENT,
+    cliente VARCHAR(100) NOT NULL,
+    produto VARCHAR(100) NOT NULL,
+    valor FLOAT NOT NULL,
+    
+    CONSTRAINT pedido PRIMARY KEY(id)
+    
+)ENGINE = InnoDB AUTO_INCREMENT = 1;
